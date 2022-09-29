@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// hover:bg-[#381b3d] 
+
 import { PlayPause } from './PlayPause';
 
 export const SongBar = ({ song, i, artistId, isPlaying, activeSong, handlePauseClick, handlePlayClick }) => (
-  <div className={`w-full flex flex-row items-center hover:bg-[#4c426e] ${activeSong?.title === song?.title ? 'bg-[#4c426e]' : 'bg-transparent'} py-2 p-4 rounded-lg cursor-pointer mb-2`}>
+  <div className={`w-full flex flex-row items-center hover:bg-[#381b3d] ${activeSong?.title === song?.title ? 'bg-[#381b3d]' : 'bg-transparent'} py-2 p-4 rounded-lg cursor-pointer mb-2`}>
     <h3 className="font-bold text-base text-white mr-3">{i + 1}.</h3>
     <div className="flex-1 flex flex-row justify-between items-center">
       <img
@@ -20,9 +22,9 @@ export const SongBar = ({ song, i, artistId, isPlaying, activeSong, handlePauseC
             </p>
           </Link>
         ) : (
-          <p className="text-xl font-bold text-white">
-            {song?.attributes?.name}
-          </p>
+            <p className="text-xl font-bold text-white">
+              {song?.attributes?.name}
+            </p>
         )}
         <p className="text-base text-gray-300 mt-1">
           {artistId ? song?.attributes?.albumName : song?.subtitle}

@@ -12,7 +12,7 @@ const NavLinks = ({ handleClick }) => (
 			<NavLink
 				key={link.name}
 				to={link.to}
-				className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-cyan-400"
+				className="flex flex-row justify-start items-center my-8 text-2xl md:text-lg font-medium text-gray-400 hover:text-pink-300"
 				onClick={() => handleClick && handleClick()}
 			>
 				<link.icon className="w-6 h-6 mr-2" />
@@ -28,8 +28,8 @@ export const Sidebar = () => {
 	return (
 		<>
 			{/* Regular menu */}
-			<div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#191624]">
-				<img src={logo} alt={logo} className="w-full h-14 object-contain" />
+			<div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#1b1b1b]">
+				<img src={logo} alt={logo} className="w-full h-20 object-contain" />
 				<NavLinks />
 			</div>
 
@@ -38,22 +38,22 @@ export const Sidebar = () => {
 				{mobileMenuOpen ? (
 					<RiCloseLine
 						onClick={() => setMobileMenuOpen(false)}
-						className="w-6 h-6 text-white mr-2"
+						className="w-12 h-12 text-white mr-2"
 					/>
 				) : (
 					<HiOutlineMenu
 						onClick={() => setMobileMenuOpen(true)}
-						className="w-6 h-6 text-white mr-2"
+						className="w-12 h-12 text-white mr-2"
 					/>
 				)}
 			</div>
 			<div
-				className={`absolute top-0 h-screen w-3/4 bg-gradient-to-tl from-white/10 to-[#483d8b] 
+				className={`absolute top-0 h-screen w-3/4 bg-gradient-to-tl from-[#360f36] to-[#111] 
         backdrop-blur-lg z-10 p-6 md:hidden smooth-transition ${
 			mobileMenuOpen ? "left-0" : "-left-full"
 		}`}
 			>
-				<img src={logo} alt={logo} className="w-full h-14 object-contain" />
+				<img src={logo} alt={logo} className="w-full h-22 object-contain" />
 				<NavLinks handleClick={() => setMobileMenuOpen(false)} />
 			</div>
 		</>

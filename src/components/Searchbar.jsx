@@ -19,7 +19,7 @@ export const Searchbar = () => {
 				Search all songs
 			</label>
 			<div className="flex flex-row justify-start items-center">
-				<FiSearch className="w-5 h-5 ml-4" />
+				<FiSearch className="w-7 h-7 ml-4" />
 				<input
 					type="search"
 					name="search-field"
@@ -28,7 +28,7 @@ export const Searchbar = () => {
 					placeholder="Search"
 					value={searchTerm}
 					onChange={(e) => setSearchTerm(e.target.value)}
-					className="flex-1 bg-transparent border-none outline-none placeholder-gray-500 text-baset text-white p-4"
+					className="flex-1 bg-transparent outline-none placeholder-gray-500 text-xl text-white p-4 focus:bg-black"
 				/>
 			</div>
 		</form>

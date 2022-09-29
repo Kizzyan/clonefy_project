@@ -17,7 +17,7 @@ export const SongCard = ({ data, song, i, activeSong, isPlaying }) => {
 	};
 
 	return (
-		<div className="flex flex-col w-[250px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer">
+		<div className="flex flex-col sm:w-[250px] w-[275px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer">
 			<div className="relative w-full h-56 group">
 				<div
 					className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex ${
@@ -34,7 +34,7 @@ export const SongCard = ({ data, song, i, activeSong, isPlaying }) => {
 				</div>
 				<img src={song.images?.coverart} alt="song_img" />
 			</div>
-			<div className="mt-4 flex flex-col">
+			<div className="mt-7 flex flex-col">
 				<p className="font-semibold text-lg text-white truncate">
 					<Link to={`/songs/${song?.key}`}>{song.title}</Link>
 				</p>
