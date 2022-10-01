@@ -1,6 +1,6 @@
 # Clonefy
 <div align="center">
-  <img src="" width="1000px" align="center" />
+  <img src="https://github.com/Gryygo/clonefy_project/blob/main/src/assets/layout.png" width="1000px" align="center" />
   <p></p>
   <p>If you want to see the application in action you can check it <a href="https://yanclonefy.netlify.app/">here!</a></p>
 </p>
