@@ -21,7 +21,10 @@ You can email me at yan.leitao26@gmail.com or contact me at <a href="https://www
 ---
 
 ## Installing:
-First you need to ```npm install``` to install all the necessary node dependecies. It's also necessary a Shazam Core API key (for general functionality) and a Ipify geolocation API key (for the Around You page). For this application, the free API plan was used in both cases. Any extra detail can be found in the .env.sample file above.
+First you need to ```npm install``` to install all the necessary node dependecies. 
+To have it running on your localhost type ```npm run dev```.
+To create a production build use ```npm run build```.
+It's also necessary a Shazam Core API key (for general functionality) and a Ipify geolocation API key (for the Around You page). For this application, the free API plan was used in both cases. Any extra detail can be found in the .env.sample file above.
 
 ---
 
